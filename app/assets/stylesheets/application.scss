@@ -2,10 +2,22 @@
 
 body{
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-family: 'Libre Baskerville', serif;
+}
+
+h1, h2{
+  font-family: 'Abril Fatface', cursive;
+}
+
+h1{
+  padding-bottom: 30px;
 }
 
 .container {
   margin: 50px;
+  line-height: 50px;
+  margin-top: 120px;
 }
 
 a {
@@ -17,10 +29,74 @@ a:hover {
   color: black;
 }
 
-.fa-plus {
-  padding-right: 10px;
+.pr-20px{
+  padding-right: 20px;
 }
 
-.fa-plus:hover {
-  transform: rotate(-20deg);
+
+.edit_info{
+  margin-bottom: 20px;
+}
+
+label{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 24px;
+  padding-right: 20px;
+  float: inline-start;
+}
+
+input{
+  width: 300px;
+  float: right;
+}
+
+.btn{
+    width: 200px;
+    border: solid;
+    padding: 25px;
+    color: black;
+    background-color: #FECDD2;
+    font-size: 14px;
+    box-shadow: 10px 10px 0px 3px #000000;
+    float: right;
+  }
+
+.btn:hover{
+  font-size: 16px;
+}
+
+.mtb-50{
+  margin: 50px 0px;
+}
+
+.bl{
+  border-left: solid 3px #E02122;
+  margin: auto;
+}
+
+.pl-20{
+  padding-left: 20px;
+}
+
+i:hover{
+  color: #FECDD2;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.details{
+  text-align: center;
+  background-color: #E02122;
+  color: white;
+  box-shadow: 10px 10px 0px 3px black;
+  border-radius: 4px;
+}
+.details h2{
+  padding: 30px 0px;
+}
+
+.mtb-30{
+  margin: 30px 0px;
 }

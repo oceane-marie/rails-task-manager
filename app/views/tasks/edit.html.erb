@@ -1,9 +1,25 @@
-<%= form_for(@task) do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
-  <%= f.label :details %>
-  <%= f.text_field :details %>
-  <%= f.label :completed %>
-  <%= f.text_field :completed %>
-  <%= f.submit %>
-<% end %>
+<div class="container">
+  <div class="row mtb-50">
+    <div class="col-6 offset-3">
+      <div class="form">
+        <%= form_for(@task) do |f| %>
+        <div class="edit_info">
+          <%= f.label :title %>
+          <%= f.text_field :title %>
+        </div>
+        <div class="edit_info">
+          <%= f.label :details %>
+          <%= f.text_field :details %>
+        </div>
+        <div class="edit_info">
+          <%= f.label :completed %>
+          <%= f.text_field :completed %>
+        </div>
+        <div class="edit_info">
+          <%= f.submit :update, class:"btn" %>
+        </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

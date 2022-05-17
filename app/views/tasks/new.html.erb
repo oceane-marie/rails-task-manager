@@ -1,8 +1,15 @@
 <div class='container'>
-<h1>Add a new task</h1>
-<%= simple_form_for @task do |f| %>
-  <%= f.input :title %>
-  <%= f.input :details %>
-  <%= f.button :submit %>
-<% end %>
+  <div class="row mtb-50">
+    <div class="col-6 offset-3">
+      <h1>Add a new task</h1>
+      <%= simple_form_for @task do |f| %>
+        <%= f.input :title %>
+        <%= f.input :details %>
+        <%# <%= f.button :submit %>
+        <%= f.button :button do %>
+          <i class="fa-solid fa-plus pr-10px"></i> Create
+          <% end %>
+      <% end %>
+    </div>
+  </div>
 </div>

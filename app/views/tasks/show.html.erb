@@ -1,16 +1,24 @@
 <div class='container'>
-  <h1><%= @task.title %></h1>
-
-  <h2>
-    <%= @task.details %>
-  </h2>
-  <p>
-    <% if @task.completed == true %>
-      <i class="fa-solid fa-circle-check"></i>Task completed
-    <% else %>
-      <i class="fa-solid fa-circle-xmark"></i>Task not completed
-    <% end %>
-  </p>
-
-  <%= link_to "Edit", edit_task_path(@task) %>
+  <div class="row mtb-50">
+    <div class="col-6 offset-3">
+      <h1>To do: <%= @task.title %></h1>
+      <div class="details">
+        <h2>
+          <%= @task.details %>
+        </h2>
+      </div>
+      <div class="completed mtb-30">
+      <p>
+        <% if @task.completed == true %>
+          <i class="fa-solid fa-circle-check pr-20px"></i>Task completed
+        <% else %>
+          <i class="fa-solid fa-circle-xmark pr-20px"></i>Task not completed
+        <% end %>
+      </p>
+      </div>
+      <div class="edit mtb-30">
+      <%= link_to "Edit", edit_task_path(@task), class:"btn" %>
+      </div>
+    </div>
+  </div>
 </div>
