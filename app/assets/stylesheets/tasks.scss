@@ -1,0 +1,25 @@
+// Place all the styles related to the tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.container {
+  margin: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+.fa-plus {
+  padding-right: 10px;
+}
+
+.fa-plus:hover {
+  animation: roll 3s infinite;
+  transform: rotate(30deg);
+}
